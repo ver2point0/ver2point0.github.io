@@ -4,7 +4,7 @@ title: Project BloQuery case study
 layout: post
 tags: [Project, Bloquery, CaseStudy]
 ---
-##Summary
+<h2>Summary</h2>
 
 BloQuery takes advantage of the free-to-use Parse API to create an open question and answer platform.
 
