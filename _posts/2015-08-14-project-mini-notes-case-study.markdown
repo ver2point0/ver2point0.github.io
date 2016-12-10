@@ -2,16 +2,17 @@
 published: true
 title: Project Mini Notes case study
 layout: post
+tags: [android, project, notes]
 ---
-##Summary
+<h2>Summary</h2>
 Mini Notes is a simple note taking application that implements Google's Material Design visual language.
 
-##Explanation
+<h2>Explanation</h2>
 This project's data management layer was created using an SQL live database. A content provider was was used to create, read, update, and delete notes. Additionally, a loader managed database calls asynchronously.
 
 I made this project as part of my Android development apprenticeship to increase my competency with building applications from start to finish. 
 
-##Problem
+<h2>Problem</h2>
 The following are the requirements for this application:
 
 1. Create new notes.
@@ -26,7 +27,7 @@ The following are the requirements for this application:
 
 6. Implement a floating action button.
 
-##Solution
+<h2>Solution</h2>
 
 1. Create new notes.
 
@@ -52,10 +53,10 @@ The following are the requirements for this application:
 
    To implement the floating action button in my application, I had to add Google's design support library to my project (`com.android.support:design:22.2.0`). From there, I called `android.support.design.widget.FloatingActionButton` in my main XML file.
 
-##Results
+<h2>Results</h2>
 Please, see my Github account to reference [Mini Notes](https://github.com/ver2point0/Mini-Notes).
 
-###Main
+<h3>Main</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9154286/6df7c19a-3e55-11e5-809b-39552fa1a1be.png"  width="250" text-align= "center" >
@@ -63,7 +64,7 @@ Please, see my Github account to reference [Mini Notes](https://github.com/ver2p
 
    - To test my application, I created three notes using the floating action button: *Monthly bills*, *Class schedule*, and *Shopping list*.
 
-###New note
+<h3>New note</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9154287/715a38a4-3e55-11e5-8ff7-f03bb844cfc6.png"  width="250" text-align= "center" >
@@ -71,7 +72,7 @@ Please, see my Github account to reference [Mini Notes](https://github.com/ver2p
 
    - In the editor activity, I typed the names of the notes above to serve as titles. These names would help me remember what contents are contained in each note. 
 
-###Notes list
+<h3>###Notes list</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9154288/73feb18e-3e55-11e5-9151-1279841c060c.png"  width="250" text-align= "center" >
@@ -79,6 +80,6 @@ Please, see my Github account to reference [Mini Notes](https://github.com/ver2p
 
    - Now that I have three notes in my notes list, I can delete them three different ways. First, I clicked on *Monthly bills*, and deleted it using the trash icon. Next, I selected *Class schedule*, backspaced until the text area was empty, and went back to my main activity successfully deleting this note. Lastly, I chose "Delete all notes" from the action bar to delete the *Shopping list* note.
 
-##Conclusion
+<h2>Conclusion</h2>
 
 I enjoyed making this application. This is something I would personally use because it has a simple interface and very few actions.
