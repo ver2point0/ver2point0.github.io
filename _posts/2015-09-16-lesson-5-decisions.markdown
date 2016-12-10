@@ -2,8 +2,9 @@
 published: true
 title: Lesson 5 Decisions
 layout: post
+tags: [decisions, java, udacity]
 ---
-# Decisions
+<h1>Decisions</h1>
 
 Lesson 5 is split into 2 parts. I finished part 1 today. There was a problem set at the end to reinforce the learned material. The hardest part about it was getting the format right for the Udacity editor.
 
