@@ -72,7 +72,7 @@ Please, see my Github account to reference [Mini Notes](https://github.com/ver2p
 
    - In the editor activity, I typed the names of the notes above to serve as titles. These names would help me remember what contents are contained in each note. 
 
-<h3>###Notes list</h3>
+<h3>Notes list</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9154288/73feb18e-3e55-11e5-9151-1279841c060c.png"  width="250" text-align= "center" >
