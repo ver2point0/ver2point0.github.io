@@ -2,6 +2,7 @@
 published: true
 title: Finished foundation phase
 layout: post
+tags: [rails, foundation]
 ---
 Eleven weeks ago, I started my Rails web dev foundation phase. 
 
