@@ -1,0 +1,40 @@
+---
+published: true
+title: Loops
+layout: post
+---
+# Loops part 1
+
+Going through lesson seemed was the most fun so far for me (I'm not exactly sure why).
+
+**One key thing this lesson emphasizes is "off-by-one" errors.**
+
+**Example: 1**
+
+`
+for (int i = 0; i < 10; i++) {
+`
+
+`System.out.print(i + " "); // 0 1 2 3 4 5 6 7 8 9`
+
+`}`
+
+**Example: 2**
+
+`
+for (int i = 0; i < =10; i++) {
+`
+
+`System.out.print(i + " "); // 0 1 2 3 4 5 6 7 8 9 10`
+
+`}`
+
+In example 1, the for loop executes 10 times, and prints 10 numbers, 0-9. Example 2 executes 11 times, and prints 11 numbers 0-10.
+
+Why does example 2(off-by-one error) execute 1 more time than example 1 and print 1 more number?
+
+This happens because of its condition statement (`i <= 10`).
+
+As long as i is less than or equal to 10, the body statement in between `{ }` will execute.
+
+- `0 <= 10 body executes , 1 <= 10 body executes, 2 <= 10 body executes ... 10 <= 10 body executes`
