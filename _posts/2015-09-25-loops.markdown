@@ -2,10 +2,11 @@
 published: true
 title: Loops
 layout: post
+tags: [loops, java, udacity]
 ---
-# Loops part 1
+<h1>Loops part 1</h1>
 
-Going through lesson seemed was the most fun so far for me (I'm not exactly sure why).
+Going through loops was the most fun so far for me (I'm not exactly sure why).
 
 **One key thing this lesson emphasizes is "off-by-one" errors.**
 
