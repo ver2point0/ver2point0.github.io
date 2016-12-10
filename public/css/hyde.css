@@ -255,6 +255,7 @@ a.sidebar-nav-item:focus {
 	padding: 3em;
 }
 #profile_image {
+  width: 300px;
 	float: left;
 	margin-right: 2em;
 }
