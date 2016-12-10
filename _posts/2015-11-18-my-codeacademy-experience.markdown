@@ -2,6 +2,7 @@
 published: true
 title: My Codeacademy experience
 layout: post
+tags: [codeacademy, fun, not, fun, ]
 ---
 <h2>The Stuff</h2>
 
