@@ -254,7 +254,7 @@ a.sidebar-nav-item:focus {
 #page_wrapper {
 	padding: 3em;
 }
-#page_wrapper #profile_image{
+#page_wrapper profile_image{
   width: 300px;
 	float: left;
 	margin-right: 2em;
