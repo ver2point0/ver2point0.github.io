@@ -2,8 +2,9 @@
 published: true
 title: Mini project Replay
 layout: post
+tags: [android, mini, project]
 ---
-###Replay: A Simon-like game to match a specific sequence and score points.
+<h3>Replay: A Simon-like game to match a specific sequence and score points.</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129520/d712c0e0-3ca6-11e5-9c8b-e926de7ac057.png"  width="250" text-align= "center" >
