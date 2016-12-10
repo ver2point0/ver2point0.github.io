@@ -4,7 +4,7 @@ title: I've an app in the play store. What now?
 layout: post
 tags: [Progress, Android, Udacity, Nanodegree]
 ---
-## What I'm doing.
+<h2>What I'm doing.</h2>
 
 Yes, I published my first app in the play store a few days ago. Check out my [post](http://www.dymmyd.com/2015/08/18/capstone-project-color-words.html) about it if you're curious.
 
