@@ -2,8 +2,9 @@
 published: true
 title: Mini project Multiply
 layout: post
+tags: [android, mini, project]
 ---
-###Multiply: A multiplication game that increases in difficulty as the user scores correct answers.
+<h3>Multiply: A multiplication game that increases in difficulty as the user scores correct answers.</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129072/ab36a4c4-3ca0-11e5-9559-6985aa55e217.png"  width="250" text-align= "center" >
