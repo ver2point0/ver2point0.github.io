@@ -249,5 +249,30 @@ a.sidebar-nav-item:focus {
   color: #8f5536;
 }
 
+/* about & portfolio pages */
+
+#page_wrapper {
+	padding: 3em;
+}
+#page_wrapper profile_image {
+	width: 300px;
+	float: left;
+	margin-right: 2em;
+}
+			
+
+#content h1 {
+		font-weight: 500;
+}
+#content p {
+  font-size: 1.1em;
+	line-height: 1.5;
+}
+#content a {
+	color: #33acb7;
+	font-weight: 700;
+	text-decoration: none;
+}
+
 /* Social media icons */
 
