@@ -1,6 +1,6 @@
 excerpt_separator: ""
 # pygments: true
-highlighter: rogue
+highlighter: rouge
 markdown: kramdown
 url: http://ver2point0.github.io
 title: JM II
