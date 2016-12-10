@@ -2,6 +2,7 @@
 published: true
 title: Rails web dev progress
 layout: post
+tags: [rails, projects, foundation]
 ---
 So, I have not written a post since October 2nd. 
 
