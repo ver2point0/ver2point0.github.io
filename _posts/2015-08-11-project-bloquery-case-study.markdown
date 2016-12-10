@@ -8,13 +8,13 @@ tags: [Project, Bloquery, CaseStudy]
 
 BloQuery takes advantage of the free-to-use Parse API to create an open question and answer platform.
 
-##Explanation
+<h2>Explanation</h2>
 
 This project employed a Mobile Backend as a Service (MBaaS) to provide a cloud backend for my Android application. I chose Parse's API because it provides features required of most backend APIs: databases, push notifications, authentication, file storage, and much more. Parse made it easy for a mobile developer like me to build my application without having to master backend software development. 
 
 I made this project as part of my Android development apprenticeship to learn how to build applications on my own with minimal explanations and guidance.
 
-##Problem
+<h2>Problem</h2>
 
 The following user stories are what I was required to implement:
 
@@ -36,7 +36,7 @@ The following user stories are what I was required to implement:
 
 9. As a user, I want to sort answers by the number of up votes they've received.
 
-##Solution
+<h2>Solution</h2>
 
 Before I began implementing the user stories, I consulted Parse's quick start [guide](https://parse.com/apps/quickstart "Parse's Quick Start guide") on how to integrate the API into my application. Integrating the API into applications is relatively easy because it is guided and uses visual content to make sure it is done properly. 
 
@@ -78,11 +78,11 @@ The guide starts with users selecting their desired product among 7 choices: Dat
    
    Sorting answers by the number of up votes they've received was implemented by including a         `query.orderByDescending("points");` call in my ParseQuery class.
 
-##Results
+<h2>Results</h2>
 
 Please, head over to my Github account to reference my [BloQuery](https://github.com/ver2point0/BloQuery "BloQuery") application. I will be explaining how I made sure the user stories above worked in my application. 
 
-###Login 
+<h3>Login</h2>
    
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129891/1bf57b04-3cab-11e5-9413-85cbdfb0bdb3.png"  width="250" text-align= "center" >
@@ -90,7 +90,7 @@ Please, head over to my Github account to reference my [BloQuery](https://github
 
    - First, I tried to login into BloQuery without signing up. It did not work. A message appeared saying *Username or Password incorrect*. Next, I clicked the sign up button to create a new account.
 
-###Signup
+<h3>Signup</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129893/2b5706bc-3cab-11e5-8a97-33748a330497.png"  width="250" text-align= "center" >
@@ -98,7 +98,7 @@ Please, head over to my Github account to reference my [BloQuery](https://github
 
    -  I created a new user named John Doe, then I logged out and created another user named Jane Smith. 
 
-###Question
+<h3>Question</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129895/31ea39ae-3cab-11e5-8e9a-9548dd086742.png"  width="250" text-align= "center" >
@@ -106,7 +106,7 @@ Please, head over to my Github account to reference my [BloQuery](https://github
 
    - Logging in as an existing user or signing up as a new user will bring you to the list of user-generated questions. I posted a question as each respective user by clicking the plus button, typing my question into the dialog that appears, and clicking submit. 
 
-###Answer
+<h3>Answer</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129897/3789ff3e-3cab-11e5-95e9-a87c505fc3e0.png"  width="250" text-align= "center" >
@@ -114,7 +114,7 @@ Please, head over to my Github account to reference my [BloQuery](https://github
 
    - As Jane, I clicked on John's question that he asked, and was brought to the individual question view. Initially, there was not an answer. I pressed the plus button on the toolbar, an answer dialog appeared, I typed my answer, and clicked submit. Next, I logged out, signed in as John, viewed Jane's answer to his question, and up voted it to 5 points. Lastly, I answered Jane's question as John (not shown in my screenshots). 
 
-###Profile
+<h3>Profile</h3>
 
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129903/40e75838-3cab-11e5-8172-2b723d965553.png"  width="250" text-align= "center" >
@@ -122,6 +122,6 @@ Please, head over to my Github account to reference my [BloQuery](https://github
 
    - As John, I clicked on his name in the list of questions. His profile appeared. I edited his profile description, but did not upload a picture. Then, I clicked on Jane's name seeing a read-only version of her empty profile. After that, I logged in as Jane, edited her profile, saved it, and viewed John's read-only version of his new profile.
 
-##Conclusion
+<h2>Conclusion</h2>
 
 I liked that I was able to use Parse an MBaaS. If I have I had to create my own backend to house my data, I know that I would have had a very difficult time doing so, and would have spent much more than necessary on this project. I am glad that everything I implemented worked as described. If I had to do things differently, I would have included background pictures for the login and signup screens instead of using solid colors, and  included pictures next to each user's username.
