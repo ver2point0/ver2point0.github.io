@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://ver2point0.github.io
+title: John McIntosh II
+tagline: Thoughts & observations
+description: Sometimes I write down what I'm thinking.
+paginate: 5
