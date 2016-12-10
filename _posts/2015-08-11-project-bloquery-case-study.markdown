@@ -82,7 +82,7 @@ The guide starts with users selecting their desired product among 7 choices: Dat
 
 Please, head over to my Github account to reference my [BloQuery](https://github.com/ver2point0/BloQuery "BloQuery") application. I will be explaining how I made sure the user stories above worked in my application. 
 
-<h3>Login</h2>
+<h2>Login</h2>
    
 <div id="wrapper" style="width:100%; text-align:center">
           <img src="https://cloud.githubusercontent.com/assets/12492121/9129891/1bf57b04-3cab-11e5-9413-85cbdfb0bdb3.png"  width="250" text-align= "center" >
