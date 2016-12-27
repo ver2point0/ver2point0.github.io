@@ -6,7 +6,7 @@ tags: [rails, foundation]
 ---
 Eleven weeks ago, I started my Rails web dev foundation phase. 
 
-Yes, I glad to be done, but I want to go back through it to really see how much I actually learned (if I have time).
+Yes, I'm glad to be done, but I want to go back through it to really see how much I actually learned (if I have time).
 
 I can sum up my foundation experience in three parts: learning how to program in Ruby, building a command line application, and building a web application with a test suite.
 
