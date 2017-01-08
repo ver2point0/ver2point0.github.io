@@ -1,3 +1,7 @@
+# ignore these server files
+/js/contact_me.js
+/mail/contact_me.php
+
 # Ignore docs files
 _gh_pages
 _site
