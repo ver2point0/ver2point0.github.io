@@ -1,83 +1,43 @@
+$(function() {
 
-function main() {
+	// Vars.
+		var	$window = $(window),
+			$body = $('body'),
+			$wrapper = $('#wrapper');
 
-(function () {
-   'use strict';
+	// Breakpoints.
+		skel.breakpoints({
+			xlarge:	'(max-width: 1680px)',
+			large:	'(max-width: 1280px)',
+			medium:	'(max-width: 980px)',
+			small:	'(max-width: 736px)',
+			xsmall:	'(max-width: 480px)'
+		});
 
-   /* ==============================================
-  	Testimonial Slider
-  	=============================================== */ 
+	// Disable animations/transitions until everything's loaded.
+		$body.addClass('is-loading');
 
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
+		$window.on('load', function() {
+			$body.removeClass('is-loading');
+		});
 
-    /*====================================
-    Show Menu on Book
-    ======================================*/
-    $(window).bind('scroll', function() {
-        var navHeight = $(window).height() - 500;
-        if ($(window).scrollTop() > navHeight) {
-            $('.navbar-default').addClass('on');
-        } else {
-            $('.navbar-default').removeClass('on');
-        }
-    });
+	// Poptrox.
+		$window.on('load', function() {
 
-    $('body').scrollspy({ 
-        target: '.navbar-default',
-        offset: 80
-    })
+			$('.thumbnails').poptrox({
+				onPopupClose: function() { $body.removeClass('is-covered'); },
+				onPopupOpen: function() { $body.addClass('is-covered'); },
+				baseZIndex: 10001,
+				useBodyOverflow: false,
+				usePopupEasyClose: true,
+				overlayColor: '#000000',
+				overlayOpacity: 0.75,
+				popupLoaderText: '',
+				fadeSpeed: 500,
+				usePopupDefaultStyling: false,
+				windowMargin: (skel.breakpoint('small').active ? 5 : 50)
+			});
 
+		});
 
-  	/*====================================
-    Portfolio Isotope Filter
-    ======================================*/
-    $(window).load(function() {
-        var $container = $('.portfolio-items');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            return false;
-        });
-
-    });
-
-  	/*====================================
-    Pretty Photo
-    ======================================*/
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
-
-}());
-
-
-}
-main();
+});
