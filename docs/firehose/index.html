@@ -1,24 +1,264 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		<title>Firehose Portfolio</title>
+		<title>John McIntosh II</title>
+		<meta name="description" content="John McIntosh II is a professional 
+          software engineer specializing in full-stack development.
+          He has extensive experience with Ruby, Rails, JavaScript, 
+          and building web applications.">
 		<meta charset="utf-8">
-		<link href="firehose.css" type="text/css" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
+		<link href="portfolio.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet" />
+		<link href="prism-atom-dark.css" type="text/css" rel="stylesheet" media="screen" />
 	</head>
 	<body>
-		<div class="about">
-			<img src="avatar.jpg" class="avatar"/>
-			<h1>John McIntosh II</h1>
-			<h2>Software Developer</h2>
-			<hr class="grey"/>
-			<p class="bio">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-				Aenean commodo ligula eget dolor. Aenean massa. 
-				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-				Nulla consequat massa quis enim. 
+		<div class="about-container">
+			
+			<ul>
+				<li><a href="#about" class="nav-link">About</a></li>
+				<li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+				<li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+				<li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+				<li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</a></li>
+			</ul>
+			
+			
+			<div class="about" id="about">
+				<img src="avatar.jpg" class="avatar"/>
+				<h1>John McIntosh II</h1>
+				<h2>Software Developer</h2>
+				<hr class="grey"/>
+				<p class="bio">
+					John is a software developer specializing in full-stack development.
+          He has experience with Ruby, Rails, JavaScript, and building web applications.
+				</p>
+			</div>
+		</div>
+		
+		<h3 id="code-samples">Code Snippets</h3>
+		
+		<hr class="yellow">
+		
+		<div class="box">
+  		<h4>Temperature Conversion</h4>
+      <p>
+        This ruby program will prompt the user for a temperature 
+        in degrees Celsius and let the user know what the 
+        corresponding temperature is in Fahrenheit.
+      </p>
+		</div>
+
+		<div class="box">
+		  <pre><code class="language-ruby">
+puts &quot;########################################&quot;
+puts &quot;Conver Celsius to Fahrenheit (&deg;C to &deg;F)&quot;
+puts &quot;########################################&quot;
+
+puts &quot;Enter degrees(&deg;) in Celsius: &quot;
+celsius_degrees = gets.chomp.to_f
+
+def celsius_to_fahrenheit(c_degrees)
+  return (c_degrees * 9/5) + 32
+end
+
+puts &quot;#{celsius_degrees} &deg;C is #{celsius_to_fahrenheit(celsius_degrees)} &deg;F.&quot;
+			</code></pre>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="box">
+			<pre><code class="language-ruby">
+puts &quot;########################################&quot;
+puts &quot;Calculate the ordinal suffix&quot;
+puts &quot;########################################&quot;
+
+puts &quot;Please enter a number between: &quot;
+number = gets.to_i
+
+def ordinal_suffix?(n)
+  right_most_digit = n % 10
+  
+  if right_most_digit == 1
+    puts &quot;That's the #{n}st item!&quot;
+  elsif right_most_digit == 2
+    puts &quot;That's the #{n}nd item!&quot;
+  elsif right_most_digit == 3
+    puts &quot;That's the #{n}rd item!&quot;
+  else
+    puts &quot;That's the #{n}th item!&quot;
+  end
+  
+end
+
+puts ordinal_suffix?(number)
+			</code></pre>
+		</div>
+		
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+		  <p>
+		    This ruby program will convert a plain number
+		    to the ordinal of the number. So for example,
+		    if the user enters 2, it will display 2nd, if
+		    the user enters 3, it will display 3rd, etc.
+		  </p>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="box">
+			<h4>Foobar</h4>
+		  <p>
+		    This ruby program is an adaptation of a classic technical 
+		    interview problem which displays sequences 
+		    of the Foobar pattern.
+		  </p>
+		</div>
+		
+		<div class="box">
+			<pre><code class="language-ruby">
+puts &quot;########################################&quot;
+puts &quot;Foobar challenge&quot;
+puts &quot;########################################&quot;
+
+puts &quot;How many items do you want to see?&quot;
+
+items = gets.to_i
+
+def foobar(n)
+  
+  divisible_by_3 = n % 3
+  divisible_by_5 = n % 5
+  
+  if (divisible_by_3 == 0 &amp;&amp; divisible_by_5 == 0)
+    &quot;Foobar&quot;
+  elsif divisible_by_5 == 0
+    &quot;Bar&quot;
+  elsif divisible_by_3 == 0
+    &quot;Foo&quot;
+  else
+    &quot;#{n}&quot;
+  end
+
+end
+
+(1..items).each do |i|
+  print &quot;#{foobar(i)} &quot;
+end
+			</code></pre>
+		</div>
+		
+		<br class="clear" />
+		
+		<h3 id="web-apps">Web Apps</h3>
+
+		<hr class="yellow" />
+
+		<div class="box">
+		  <h4>Quote Generator</h4>
+		  <img src="splurty.png" class="full-width" />
+		  <p>
+        A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS.
+        Uses Git and GitHub for version control, and launched
+        on Heroku.
+  		</p>
+		</div>
+		
+		<div class="box">
+			<h4>Yelp Clone</h4>
+			<img src="nomster.png" class="full-width" />
+			<p>
+				A Yelp clone that integrates with the Google Maps API 
+				and includes features like user comments, star ratings,
+				image uploading, and user authentication.
 			</p>
 		</div>
+		
+		<br class="clear" />
+
+		<div class="box">
+			<h4>Two-Sided Market Place</h4>
+			<img src="flixter.png" class="full-width" />
+			<p>
+				A two-sided, video-streaming marketplace platform that
+				features credit card payment capabilities, user role
+				management, complex user interfaces, and advanced
+				database relationships.
+			</p>
+		</div>
+
+		<div class="box">
+			<h4>Test Driven Development</h4>
+			<img src="grammable.png" class="full-width" />
+			<p>
+				An Instagram clone that was built using industry-standard, test-driven
+				development following numerous red/green/refactor cycles.
+			</p>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="box">
+			<h4>Single Page Todo Application</h4>
+			<img src="todoster.png" class="full-width" />
+			<p>
+			  This single-page to-do application features a
+			  fluid user interface that– by using JavaScript–
+			  allows users to rapidly add dynamic content.
+			</p>
+		</div>
+		
+		<div class="box">
+			<h4>Agile Team Project</h4>
+			<img src="chess.png" class="full-width" />
+			<p>
+				Worked on an Agile software development team building
+				a chess application. Under the guidance of a senior software engineer,
+				we had weekly Agile team meetings for code reviews, sprint planning,
+				and feature assignments.
+			</p>
+		</div>
+
+		<br class="clear" />
+		
+		<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+		<hr class="yellow" />
+		
+		<p class="skills-and-tools">
+	    John has developed proficiency and expertise 
+	    in the following programming languages and 
+	    comfort with the following tools.
+		</p>
+		
+		<div class="icons">
+		  <img src="github.png" class="icon" />
+		  <img src="rubocop.png" class="icon" />
+		  <img src="trello.png" class="icon" />
+		  <img src="slack.png" class="icon" />
+		  <img src="codeship.png" class="icon" />
+		
+		  <br class="clear" />
+		  <img src="skills.png" class="icon"/>
+		</div>
+		
+		<div class="contact-me" id="hire-me">
+			<h3 class="contact-headline">Contact</h3>
+			<hr class="yellow" />
+			<p class="contact-info">
+				Currently entertaining new opportunities.
+				Please get in touch via email
+			</p>
+		
+			<p>
+				<a href="mailto:jawm22@gmail.com" class="contact-link">Email Me</a>
+			</p>
+		</div>
+		
+		<!-- js scripts -->
+		<script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+    
 	</body>
 </html>
