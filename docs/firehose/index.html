@@ -78,12 +78,13 @@ number = gets.to_i
 
 def ordinal_suffix?(n)
   right_most_digit = n % 10
+  mod_100 = n % 100
   
-  if right_most_digit == 1
+  if right_most_digit == 1 &amp;&amp; mod_100 != 11
     puts &quot;That's the #{n}st item!&quot;
-  elsif right_most_digit == 2
+  elsif right_most_digit == 2 &amp;&amp; mod_100 != 12
     puts &quot;That's the #{n}nd item!&quot;
-  elsif right_most_digit == 3
+  elsif right_most_digit == 3 &amp;&amp; mod_100 != 13
     puts &quot;That's the #{n}rd item!&quot;
   else
     puts &quot;That's the #{n}th item!&quot;
