@@ -1404,8 +1404,8 @@
 
 	body {
 		background-color: #000;
-		background-image: url("../images/pattern.jpg");
-		/*background-size: cover;*/
+		background-image: url("../images/bg.jpg");
+		background-repeat: no-repeat;
 		background-position: top center;
 	}
 
