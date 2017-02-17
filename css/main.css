@@ -1403,8 +1403,8 @@
 	}
 
 	body {
-		background-color: #000;
-		background-image: url("../images/bg.jpg");
+		background: radial-gradient(ellipse farthest-side at 100% 100%, #c6efa9 20%, #26c2db 50%, #0731a7 110%);
+		background-color: #000000;
 		background-repeat: no-repeat;
 		background-position: top center;
 	}
